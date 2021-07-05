@@ -5,32 +5,32 @@
 class GoProject < Formula
   desc "Go project template"
   homepage "https://github.com/zackijack/go-project"
-  version "0.1.6"
+  version "0.2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zackijack/go-project/releases/download/v0.1.6/go-project_Darwin_x86_64.tar.gz"
-      sha256 "8ba20dcd7697fbabce8c3b1ec247568be0f8362dfd1b0c045e8257c5274529be"
+      url "https://github.com/zackijack/go-project/releases/download/v0.2.0/go-project_Darwin_x86_64.tar.gz"
+      sha256 "5fffb6713cb35c731c4ecaaf09ba156151a045e9cb9b4d62e3e2848322aba470"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zackijack/go-project/releases/download/v0.1.6/go-project_Darwin_arm64.tar.gz"
-      sha256 "dbc4f484f00ba469d698d94e0c08db0c78460b8d82b3d7e0fb36fcfc47317811"
+      url "https://github.com/zackijack/go-project/releases/download/v0.2.0/go-project_Darwin_arm64.tar.gz"
+      sha256 "8e02c2a8d17c3fee606234f6cae39c9c701b06263088c2245b5a172e2e048cf3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/zackijack/go-project/releases/download/v0.1.6/go-project_Linux_x86_64.tar.gz"
-      sha256 "1a16d3d103c20ebdb2d8bb0c2c95b2455110214cfdba36b922603e140d68e3bd"
+      url "https://github.com/zackijack/go-project/releases/download/v0.2.0/go-project_Linux_x86_64.tar.gz"
+      sha256 "247b036079ed0dbbf11673e15fadef31f007b591adca5791dc93723b294fee28"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/zackijack/go-project/releases/download/v0.1.6/go-project_Linux_arm.tar.gz"
-      sha256 "fa260fc19ea020fd1e99d1fcef12a6b44fce8a0b08f82cff1428a695bcdc2a94"
+      url "https://github.com/zackijack/go-project/releases/download/v0.2.0/go-project_Linux_arm.tar.gz"
+      sha256 "2f16e7a1fe6a40606f9e7e96d6a704ed82b50ddae007c7b2d5d227f8a09be09b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackijack/go-project/releases/download/v0.1.6/go-project_Linux_arm64.tar.gz"
-      sha256 "e83fa220b6ced96a632a6623e212d90f5883dd504f6e47d3097f5cb4a309783f"
+      url "https://github.com/zackijack/go-project/releases/download/v0.2.0/go-project_Linux_arm64.tar.gz"
+      sha256 "be2ca342d9368108b39f316b99d3f1fcf76188028e223d7cac196502c777d43b"
     end
   end
 
